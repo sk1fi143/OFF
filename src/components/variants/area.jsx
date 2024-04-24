@@ -8,10 +8,6 @@ import area4 from "../../assets/area4.jpg";
 import area5 from "../../assets/area5.png";
 
 export const Area = () => {
-
-  useEffect(() => {
-    document.title = "Участок";
-  });
   
   return (
     <Theory
