@@ -1,0 +1,11 @@
+@import './libs/normalize';
+@import './libs/variables';
+@import './components/_all';
+@import './pages/main';
+
+body{
+    background: $background;
+    display: flex;
+    flex-direction: column;
+}
+

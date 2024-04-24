@@ -1,0 +1,463 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 50px;
+    width: 820px;
+    color: $white;
+    font-family: "Raleway";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 30px;
+    width: 807px;
+    color: $grey;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &__buttonGo {
+    margin-top: 66px;
+    border: none;
+    cursor: pointer;
+    width: 270px;
+    height: 58px;
+    border-radius: 10px;
+    background: $purple;
+    color: $white;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    text-align: center;
+  }
+
+  &__buttonGo:hover{
+    background: $hoverButton;
+    transition: all .3s;
+  }
+
+  &__taskTitle {
+    color: $white;
+    margin-top: 100px;
+    font-family: "Raleway";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  &__taskWrap {
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 60px;
+  }
+
+  &__titleAbout {
+    margin-top: 120px;
+    color: $white;
+    margin-right: auto;
+    margin-left: 100px;
+    font-family: "Raleway";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__aboutUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: flex-start;
+      margin-left: 100px;
+
+      &__text {
+        color: $grey;
+        width: 860px;
+        font-family: "Raleway";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+
+      &__button {
+        border: none;
+        cursor: pointer;
+        width: 449px;
+        height: 60px;
+        border-radius: 12px;
+        background: $purple;
+        color: $white;
+        font-family: "Raleway";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+
+      &__button:hover{
+        background: $hoverButton;
+        transition: all .3s;
+      }
+    }
+  }
+
+  .Swiper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    height: 350px;
+    width: 600px !important;
+  }
+
+  .swiper-pagination {
+    bottom: 0px !important;
+
+    .swiper-pagination-bullet{
+      background: $grey;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet:hover{
+      background: $hoverButton;
+      transition: all .3s;
+    }
+
+    .swiper-pagination-bullet-active{
+      background: $purple;
+    }
+    
+    .swiper-pagination-bullet-active:hover{
+      background: $purple;
+    }
+  }
+
+  .SwiperSlide {
+    width: 600px !important;
+    height: 318px;
+    border-radius: 25px;
+    background: rgb(40, 46, 71);
+  }
+
+  .SwiperCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 45px;
+
+      &__name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 50px;
+        column-gap: 15px;
+
+        svg {
+          width: 54px;
+          height: 54px;
+        }
+
+        span {
+          color: $white;
+          font-family: "Raleway";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 2px;
+          text-align: left;
+        }
+      }
+
+      &__stars {
+        margin-right: 50px;
+      }
+    }
+
+    &__text {
+      color: $white;
+      font-family: "Raleway";
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 25px;
+      letter-spacing: 2px;
+      text-align: left;
+      margin-top: 25px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1440px){
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    &__title {
+      margin-top: 50px;
+      width: 780px;
+      color: $white;
+      font-family: "Raleway";
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+      line-height:55px;
+    }
+  
+    &__text {
+      margin-top: 20px;
+      width: 750px;
+      color: $grey;
+      font-family: "Raleway";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  
+    &__buttonGo {
+      margin-top: 46px;
+      border: none;
+      cursor: pointer;
+      width: 270px;
+      height: 58px;
+      border-radius: 10px;
+      background: $purple;
+      color: $white;
+      font-family: "Raleway";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  
+    &__buttonGo:hover{
+      background: $hoverButton;
+      transition: all .3s;
+    }
+  
+    &__taskTitle {
+      color: $white;
+      margin-top: 70px;
+      font-family: "Raleway";
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 66px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  
+    &__taskWrap {
+      margin-top: 40px;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 70px;
+      row-gap: 50px;
+    }
+  
+    &__titleAbout {
+      margin-top: 80px;
+      color: $white;
+      margin-right: auto;
+      margin-left: 80px;
+      font-family: "Raleway";
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 66px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  
+    &__aboutUs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      align-items: center;
+      width: 100%;
+  
+      &__col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: flex-start;
+        margin-left: 80px;
+  
+        &__text {
+          color: $grey;
+          width: 640px;
+          font-family: "Raleway";
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 140%;
+          letter-spacing: 1px;
+          text-align: left;
+        }
+  
+        &__button {
+          border: none;
+          cursor: pointer;
+          width: 349px;
+          height: 55px;
+          border-radius: 12px;
+          background: $purple;
+          color: $white;
+          font-family: "Raleway";
+          font-size: 22px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+  
+        &__button:hover{
+          background: $hoverButton;
+          transition: all .3s;
+        }
+      }
+    }
+  
+    .Swiper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-right: 100px;
+      height: 350px;
+      width: 600px !important;
+    }
+  
+    .swiper-pagination {
+      bottom: 0px !important;
+  
+      .swiper-pagination-bullet{
+        background: $grey;
+        opacity: 1;
+      }
+  
+      .swiper-pagination-bullet-active{
+        background: $purple;
+      }
+    }
+  
+    .SwiperSlide {
+      width: 600px !important;
+      height: 318px;
+      border-radius: 25px;
+      background: rgb(40, 46, 71);
+    }
+  
+    .SwiperCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 45px;
+  
+        &__name {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-left: 50px;
+          column-gap: 15px;
+  
+          svg {
+            width: 54px;
+            height: 54px;
+          }
+  
+          span {
+            color: $white;
+            font-family: "Raleway";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 2px;
+            text-align: left;
+          }
+        }
+  
+        &__stars {
+          margin-right: 50px;
+        }
+      }
+  
+      &__text {
+        color: $white;
+        font-family: "Raleway";
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 25px;
+        letter-spacing: 2px;
+        text-align: left;
+        margin-top: 25px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px){}
+
+@media screen and (max-width: 767px) and (min-width: 480px){}
+
+@media screen and (max-width: 479px) and (min-width: 320px){}
